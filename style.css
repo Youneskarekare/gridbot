@@ -1,0 +1,178 @@
+/*css index.html*/
+*{
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    height: 100vh;
+    background-size: cover;
+    background-image: url(./img/robot-handshake-human-background-futuristic-digital-age.jpg);
+    background-repeat: no-repeat;
+}
+/* oppacty */
+header::before{
+    content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+     
+      background-color: rgba(0, 0, 0, 0.6);
+  }
+  header *{
+      z-index: 1;
+  }
+
+
+.bar{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bar h1 a {
+    font-family:'Times New Roman', Times, serif ;
+    color: rgb(232, 232, 232);
+}
+.cont {
+    height: 75%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase ;
+}
+.cont h1{
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+ .cont p {
+    margin-top: 20px;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+color: rgb(255, 255, 255);
+text-transform: uppercase;
+
+ }
+ .bot{
+    color: rgb(242, 255, 0);
+    font-size: 50px;
+ }
+ .title-p {
+    color: rgb(255, 255, 255);
+    font-size: larger;
+    background-color: rgba(0, 0, 0, 0.703);
+    padding: 6px 10px;
+    border-radius: 15px;
+ }
+.btn{
+margin-top: 30px;
+margin-right: 20px;
+    padding: 10px 30px;
+    border: none;
+    font-size: large;
+ border-radius: 12px;
+ background-color: rgba(16, 181, 145, 0.763);
+  color: rgb(255, 255, 255);
+  transition: 0.6s;
+  font-family: 'Rubik', sans-serif;
+}
+.btn:hover{
+    background-color:rgba(255, 255, 255, 0.874) ;
+   color: black;
+}
+
+
+@media only screen and (min-width: 600px) {
+   header {
+        height: 100vh;
+   justify-content: center;
+       align-items: center;
+   
+    }
+    .cont p {
+        margin-top: 30px;
+       
+        font-size: 10px;
+        justify-content: center;
+        align-items: center; 
+  }
+  .bot{
+    font-size: 50px;
+  }
+ 
+}
+
+@media (min-width: 392px) {
+   header {
+ 
+        height: 100vh;
+        background-size: cover;
+        justify-content: center;
+        align-items: center;
+    }
+    .cont p {
+        margin-top: 30px;
+        font-size: 10px;
+        justify-content: center;
+        align-items: center; 
+  }
+  .cont h1  {
+    font-size: 40px;
+  }
+  .bot{
+    font-size: 50px;
+  }
+}
+
+
+@media (min-width: 792px) {
+    header {
+     
+         height: 100vh;
+         background-size: cover;
+
+        
+     }
+     .cont p {
+         margin-top: 30px;
+         font-size:15px;
+         justify-content: center;
+         align-items: center; 
+   }
+   .cont h1  {
+    font-size: 50px;
+  }
+  .bot{
+    font-size: 50px;
+  }
+ }
+
+
+@media (min-width: 992px) {
+   header {
+    
+        height: 100vh;
+        background-size: cover;
+   
+        background-repeat: no-repeat;
+    }
+    .cont p {
+        margin-top: 30px;
+        font-size:20px;
+        justify-content: center;
+        align-items: center; 
+  }
+  .cont h1  {
+    font-size: 60px;
+  }
+ .bot{
+    font-size: 60px;
+  }
+}
+
